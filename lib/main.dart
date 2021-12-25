@@ -215,6 +215,34 @@ class Home extends StatelessWidget {
                         '9.Ask recommendation',style: TextStyle(fontSize: 24),
                       )),
                 ),
+                SizedBox(
+                  height: 40,
+                ),
+                SizedBox(
+                  width: 310,
+                  height: 60,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.green,
+                        onPrimary: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                      onPressed: ()async{
+                        await Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => AskrecommendationPage(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'Grammer PDF',style: TextStyle(fontSize: 24),
+                      )),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
               ],
         ),
           ),
